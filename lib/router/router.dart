@@ -12,7 +12,7 @@ class CustomPage {
 
 var routes = <CustomPage>[
   CustomPage(path: '/', page: () => const Home()),
-  CustomPage(path: '/richText', page: () => const MyRichText())
+  CustomPage(path: '/richText', page: () => MyRichText())
 ];
 
 List<RouteBase> generateRoutes(List<CustomPage> routes) {

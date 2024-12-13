@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/pages/rich_text/rich_text.dart';
 import '../../widgets/m_input.dart';
-
+import 'package:go_router/go_router.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -17,23 +18,22 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     var isButtonEnabled = username.isNotEmpty;
-    final theme = Theme.of(context);  
 
     return Scaffold(
-      appBar: AppBar(title: const Text('Home Screen')),
+      appBar: AppBar(title: const Text('Home')),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ClipOval(
-              child: Image.asset('images/user.png', fit: BoxFit.cover),
+              child: Image.asset('assets/images/user.png', fit: BoxFit.cover),
             ),
             SizedBox(height: 40),
             MInput(
               controller:_controller,
               height: 90,
               width: 200,
-              backgroundColor: theme.colorScheme.primary,
+              backgroundColor: Colors.white,
               textColor: Color(0xFF737373),
               text: '姓名',
               cb: (val) => {
@@ -45,9 +45,10 @@ class _HomeState extends State<Home> {
             SizedBox(height: 40),
             ElevatedButton(
               onPressed: isButtonEnabled ? () => {
-
+                // context.go('/richText')
+                context.push('/richText')
               } : null,
-              child: Text('Button'),
+              child: Text('Go'),
             ),
           ],
         ),
