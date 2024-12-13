@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../widgets/mInput.dart';
+import '../../widgets/m_input.dart';
 
 
 class Home extends StatefulWidget {
@@ -33,7 +33,7 @@ class _HomeState extends State<Home> {
               controller:_controller,
               height: 90,
               width: 200,
-              backgroundColor: Colors.white,
+              backgroundColor: theme.colorScheme.primary,
               textColor: Color(0xFF737373),
               text: '姓名',
               cb: (val) => {

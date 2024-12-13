@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import '../pages/home/home.dart';
+import '../pages/rich_text/rich_text.dart';
 
 class CustomPage {
   final String path;
@@ -10,7 +11,8 @@ class CustomPage {
 }
 
 var routes = <CustomPage>[
-  CustomPage(path: '/', page: () => const Home())
+  CustomPage(path: '/', page: () => const Home()),
+  CustomPage(path: '/richText', page: () => const MyRichText())
 ];
 
 List<RouteBase> generateRoutes(List<CustomPage> routes) {
