@@ -40,7 +40,7 @@ dependencies:
   go_router: ^14.6.2
   flutter_quill: ^10.8.5
   flutter_quill_extensions: ^10.8.5
-  flutter_quill_to_pdf: ^2.2.5
+  flutter_quill_to_pdf: 2.2.4
   animated_text_kit: ^4.2.2
   file_picker: 8.1.4
   pdf: ^3.11.1

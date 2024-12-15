@@ -367,10 +367,10 @@ packages:
     dependency: "direct main"
     description:
       name: flutter_quill_to_pdf
-      sha256: dbdc47a61b2100ec0fd5d436f2ab588a14a67b32fb0a0877ff2c2de79c6cb5b3
+      sha256: "8007094d08f08684825ed3651568e9434f0f23d8641b2d0ae592ae8fa2eb48c2"
       url: "https://pub.dev"
     source: hosted
-    version: "2.2.5"
+    version: "2.2.4"
   flutter_test:
     dependency: "direct dev"
     description: flutter
